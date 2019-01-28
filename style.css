@@ -1,21 +1,33 @@
-.top, .middle, .bottom {
+.top, .middle, .bottom, .top-right {
     height: 100px;
     width: 300px;
     background: rgba(255, 0, 0, 0.5);
     margin: auto;
-    border: 1px solid black;
-    
+    border: 1px solid black;    
 }
 
 .top {
     animation-name: rxr;
     animation-duration: 4s;
+    transform: translateZ(150px);
+}
+
+.top-right {
+    background: rgba(0, 255, 0, 0.5);
+    transform: rotateY(90deg) translateZ(150px) translateY(-102px);
+    animation-name: rtrr;
+    animation-duration: 4s;
 }
 
 @keyframes rxr {
-    0% {transform: rotateY(0deg);}
-/*    25% {transform: rotateY(45deg);}*/
-    50% {transform: rotateY(90deg);}
-/*    75% {transform: rotateY(135deg);}*/
-    100% {transform: rotateY(180deg);}
+    0% {transform: rotateY(0deg) translateZ(150px);}
+    50% {transform: rotateY(90deg) translateZ(150px);}
+    100% {transform: rotateY(180deg) translateZ(150px);}
+}
+
+
+@keyframes rtrr {
+    0% {transform: rotateY(90deg) translateZ(150px) translateY(-102px);}
+    50% {transform: rotateY(180deg) translateZ(150px) translateY(-102px);}
+    100% {transform: rotateY(270deg) translateZ(150px) translateY(-102px);}
 }
