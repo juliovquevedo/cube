@@ -38,7 +38,7 @@ body {
 
 .top-back {
     position: absolute;
-    background-color: red;
+    background-image: url(sand.png);
     z-index: 0;
     transform: rotateY(180deg) translateZ(-150px);
     animation-name: tback;
@@ -47,7 +47,7 @@ body {
 
 .top-left {
     position: absolute;
-    background-color: green;
+    background-image: url(surf.png);
     z-index: 5;
     transform: rotateY(270deg) translateZ(150px);
     animation-name: tleft;
