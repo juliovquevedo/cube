@@ -3,4 +3,14 @@
     width: 200px;
     background-color: red;
     margin: auto;
+    border: 1px solid black;
+    animation-name: rxr;
+    animation-duration: 4s;
+}
+
+@keyframes rxr {
+    0% {transform: rotateY(45deg)}
+    25% {transform: rotateY(90deg)}
+    0% {transform: rotateY(135deg)}
+    0% {transform: rotateY(180deg)}
 }
