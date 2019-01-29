@@ -2,10 +2,35 @@ body {
     
 }
 
-.text {
+.text > div {
     font-size: 3rem;
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    margin-left: 365px;
     text-align: center;
+    animation-delay: 0.3s;
+    animation-duration: 18s;
 }
+
+.msg1 {animation-name: mesg1;}
+.msg2 {animation-name: mesg2;}
+.msg3 {animation-name: mesg3;}
+.msg4 {animation-name: mesg4;}
+.msg5 {animation-name: mesg5;}
+.msg6 {animation-name: mesg6;}
+.msg7 {animation-name: mesg7;}
+.msg8 {animation-name: mesg8;}
+
+@keyframes mesg1 {10% {visibility: visible;} 20% {visibility: hidden;}}
+@keyframes mesg2 {19.9% {visibility: hidden} 20% {visibility: visible;} 30% {visibility: hidden;}}
+@keyframes mesg3 {29.9% {visibility: hidden} 30% {visibility: visible;} 40% {visibility: hidden;}}
+@keyframes mesg4 {39.9% {visibility: hidden} 40% {visibility: visible;} 50% {visibility: hidden;}}
+@keyframes mesg5 {49.9% {visibility: hidden} 50% {visibility: visible;} 60% {visibility: hidden;}}
+@keyframes mesg6 {59.9% {visibility: hidden} 60% {visibility: visible;} 70% {visibility: hidden;}}
+@keyframes mesg7 {69.9% {visibility: hidden} 70% {visibility: visible;} 80% {visibility: hidden;}}
+@keyframes mesg8 {79.9% {visibility: hidden} 80% {visibility: visible;} 90% {visibility: hidden;}}
+
 
 .cube {
     position: absolute;
@@ -183,3 +208,4 @@ body {
     75% {transform: rotateY(0deg) translateZ(225px); z-index: 0;}
     100% {transform: rotateY(-90deg) translateZ(225px);}
 }
+*/
