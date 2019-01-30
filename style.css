@@ -35,11 +35,11 @@ body {
 .cube {
     position: absolute;
     left: 50%;
-    margin-left: -255px;
+    margin-left: -225px;
     top: 200px;
-    perspective: 1500px;
     transform-style: preserve-3d;
-    transform: rotateY(15deg) rotateX(-5deg);
+    transform: rotateY(10deg) rotateX(-5deg);
+    perspective: 10000px;
 }
 
 .side {
@@ -53,14 +53,14 @@ body {
 .top {
     height: 450px;
     transform: rotateX(90deg) translateZ(225px);
-    background-color: red;
+    background-image: url(father.png);
     animation-name: toptop;
 }
 
 .bottom {
     height: 450px;
     transform: rotateX(-90deg) translateZ(225px);
-    background-color: blue;
+    background-image: url(husband.png);
     animation-name: bottombottom;
 }
 
