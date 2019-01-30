@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 body {
     
 }
@@ -10,8 +21,6 @@ body {
     margin-left: 165px;
     text-align: center;
     animation-duration: 2s;
-/*    animation-delay: 0.3s;*/
-/*    animation-duration: 8s;*/
 }
 
 
@@ -89,7 +98,7 @@ body {
 }
 
 .top-front {
-    background-image: url(clouds.png);
+    background-image: url(fronttop.png);
     z-index: 20;
     transform: translateZ(225px);
     animation-name: tfront;   
@@ -118,7 +127,7 @@ body {
 
 .middle-front {
     top: 150px;
-    background-image: url(clouds.png);
+    background-image: url(frontmiddle.png);
     z-index: 20;
     transform: translateZ(225px);
     animation-name: mfront;
@@ -150,7 +159,7 @@ body {
 
 .bottom-front {
     top: 300px;
-    background-image: url(clouds.png);
+    background-image: url(frontbottom.png);
     z-index: 0;
     transform: translateZ(225px);
     animation-name: tfront;
