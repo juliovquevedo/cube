@@ -7,12 +7,33 @@ body {
     visibility: hidden;
     position: absolute;
     top: 60px;
-    margin-left: 365px;
+    margin-left: 165px;
     text-align: center;
-    animation-delay: 0.3s;
-    animation-duration: 18s;
+    animation-duration: 2s;
+/*    animation-delay: 0.3s;*/
+/*    animation-duration: 8s;*/
 }
 
+
+.msg1 {animation-delay: 0.5s; animation-name: mesg1;}
+.msg2 {animation-delay: 2.5s; animation-name: mesg2;}
+.msg3 {animation-delay: 4.5s; animation-name: mesg3;}
+.msg4 {animation-delay: 6.5s; animation-name: mesg4;}
+.msg5 {animation-delay: 8.5s; animation-name: mesg5;}
+.msg6 {animation-delay: 10.5s; animation-name: mesg6;}
+.msg7 {animation-delay: 12.5s; animation-name: mesg7;}
+.msg8 {animation-delay: 14.5s; animation-name: mesg8;}
+
+@keyframes mesg1 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg2 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg3 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg4 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg5 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg6 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg7 {from {visibility: visible;}to {visibility: hidden;}}
+@keyframes mesg8 {from {visibility: visible;}to {visibility: hidden;}}
+
+/*
 .msg1 {animation-name: mesg1;}
 .msg2 {animation-name: mesg2;}
 .msg3 {animation-name: mesg3;}
@@ -22,6 +43,7 @@ body {
 .msg7 {animation-name: mesg7;}
 .msg8 {animation-name: mesg8;}
 
+
 @keyframes mesg1 {10% {visibility: visible;} 20% {visibility: hidden;}}
 @keyframes mesg2 {19.9% {visibility: hidden} 20% {visibility: visible;} 30% {visibility: hidden;}}
 @keyframes mesg3 {29.9% {visibility: hidden} 30% {visibility: visible;} 40% {visibility: hidden;}}
@@ -30,16 +52,17 @@ body {
 @keyframes mesg6 {59.9% {visibility: hidden} 60% {visibility: visible;} 70% {visibility: hidden;}}
 @keyframes mesg7 {69.9% {visibility: hidden} 70% {visibility: visible;} 80% {visibility: hidden;}}
 @keyframes mesg8 {79.9% {visibility: hidden} 80% {visibility: visible;} 90% {visibility: hidden;}}
+*/
 
 
 .cube {
     position: absolute;
     left: 50%;
     margin-left: -225px;
-    top: 200px;
+    top: 250px;
     transform-style: preserve-3d;
     transform: rotateY(10deg) rotateX(-5deg);
-    perspective: 10000px;
+    perspective: 30000px;
 }
 
 .side {
@@ -48,6 +71,7 @@ body {
     position: absolute;
     background-size: cover;
     animation-duration: 8s;
+    animation-delay: 4s;
 }
 
 .top {
