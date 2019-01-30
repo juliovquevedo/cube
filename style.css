@@ -54,12 +54,14 @@ body {
     height: 450px;
     transform: rotateX(90deg) translateZ(225px);
     background-color: red;
+    animation-name: toptop;
 }
 
 .bottom {
     height: 450px;
     transform: rotateX(-90deg) translateZ(225px);
     background-color: blue;
+    animation-name: bottombottom;
 }
 
 .top-front {
@@ -155,6 +157,22 @@ body {
 }
 
 
+@keyframes toptop {
+    0% {transform: rotateX(90deg) rotateZ(0deg) translateZ(225px);}
+    25% {transform: rotateX(90deg) rotateZ(-90deg) translateZ(225px);}
+    50% {transform: rotateX(90deg) rotateZ(-180deg) translateZ(225px);}
+    75% {transform: rotateX(90deg) rotateZ(-270deg) translateZ(225px);}
+    100% {transform: rotateX(90deg) rotateZ(-360deg) translateZ(225px);}
+}
+
+@keyframes bottombottom {
+    0% {transform: rotateX(-90deg) rotateZ(0deg) translateZ(225px);}
+    25% {transform: rotateX(-90deg) rotateZ(90deg) translateZ(225px);}
+    50% {transform: rotateX(-90deg) rotateZ(180deg) translateZ(225px);}
+    75% {transform: rotateX(-90deg) rotateZ(270deg) translateZ(225px);}
+    100% {transform: rotateX(-90deg) rotateZ(360deg) translateZ(225px);}
+}
+
 @keyframes tfront {
     0% {transform: rotateY(0deg) translateZ(225px);}
     25% {transform: rotateY(90deg) translateZ(225px);}
@@ -162,7 +180,6 @@ body {
     75% {transform: rotateY(270deg) translateZ(225px); z-index: 0;}
     100% {transform: rotateY(360deg) translateZ(225px);}
 }
-
 
 @keyframes tright {
     0% {transform: rotateY(90deg) translateZ(225px);}
