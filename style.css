@@ -241,4 +241,27 @@
     75% {transform: rotateY(0deg) translateZ(225px); z-index: 0;}
     100% {transform: rotateY(-90deg) translateZ(225px);}
 }
-*/
+
+@media screen and (max-width: 500px){
+    .text > div {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .text > div {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .text > div {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 1001px){
+    .text > div {
+        margin-left: 400px;
+    }
+}
