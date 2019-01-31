@@ -248,9 +248,8 @@
     top: 800px;
     left: 50%;
     margin-left: -265px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     animation-name: info;
-/*    animation-delay: 12s;*/
     animation-duration: 16s;
 }
 
@@ -267,6 +266,6 @@ a {
 
 @media screen and (max-width: 700px) {
     .info {
-        font-size: 3em;
+        font-size: 3rem;
     }
 }
