@@ -1,7 +1,3 @@
-body {
-    
-}
-
 .text > div {
     font-size: 4rem;
     visibility: hidden;
@@ -31,28 +27,6 @@ body {
 @keyframes mesg7 {from {visibility: visible;}to {visibility: hidden;}}
 @keyframes mesg8 {from {visibility: visible;}to {visibility: hidden;}}
 
-/*
-.msg1 {animation-name: mesg1;}
-.msg2 {animation-name: mesg2;}
-.msg3 {animation-name: mesg3;}
-.msg4 {animation-name: mesg4;}
-.msg5 {animation-name: mesg5;}
-.msg6 {animation-name: mesg6;}
-.msg7 {animation-name: mesg7;}
-.msg8 {animation-name: mesg8;}
-
-
-@keyframes mesg1 {10% {visibility: visible;} 20% {visibility: hidden;}}
-@keyframes mesg2 {19.9% {visibility: hidden} 20% {visibility: visible;} 30% {visibility: hidden;}}
-@keyframes mesg3 {29.9% {visibility: hidden} 30% {visibility: visible;} 40% {visibility: hidden;}}
-@keyframes mesg4 {39.9% {visibility: hidden} 40% {visibility: visible;} 50% {visibility: hidden;}}
-@keyframes mesg5 {49.9% {visibility: hidden} 50% {visibility: visible;} 60% {visibility: hidden;}}
-@keyframes mesg6 {59.9% {visibility: hidden} 60% {visibility: visible;} 70% {visibility: hidden;}}
-@keyframes mesg7 {69.9% {visibility: hidden} 70% {visibility: visible;} 80% {visibility: hidden;}}
-@keyframes mesg8 {79.9% {visibility: hidden} 80% {visibility: visible;} 90% {visibility: hidden;}}
-*/
-
-
 .cube {
     position: absolute;
     left: 50%;
@@ -60,15 +34,15 @@ body {
     top: 250px;
     transform-style: preserve-3d;
     transform: rotateY(10deg) rotateX(-5deg);
-    perspective: 30000px;
+    perspective: 40000px;
     animation-name: cube;
     animation-delay: 10s;
     animation-duration: 6s;
 }
 
 @keyframes cube {
-    33% {transform: rotateX(-95deg); top: 400px}
-    67% {transform: rotateX(85deg); top: 400px}
+    33% {transform: rotateX(-95deg); top: 450px}
+    67% {transform: rotateX(85deg); top: 450px}
 }
 
 .side {
