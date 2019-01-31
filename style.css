@@ -244,13 +244,29 @@
 
 .info {
     position: absolute;
+    visibility: visible;
     top: 800px;
     left: 50%;
     margin-left: -265px;
-    font-size: 2em;
+    font-size: 1.5em;
+    animation-name: info;
+/*    animation-delay: 12s;*/
+    animation-duration: 16s;
+}
+
+@keyframes info {
+    0% {visibility: hidden;}
+    99% {visibility: hidden;}
+    100% {visibility: visible;}
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .info {
+        font-size: 3em;
+    }
 }
