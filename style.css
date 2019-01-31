@@ -119,7 +119,7 @@ body {
 }
 
 .top-left {
-    background-image: url(surf.png);
+    background-image: url(lefttop.png);
     z-index: 5;
     transform: rotateY(270deg) translateZ(225px);
     animation-name: tleft;
@@ -135,7 +135,7 @@ body {
 
 .middle-right {
     top: 150px;
-    background-image: url(baloons.png);
+    background-image: url(rightmiddle.png);
     z-index: 10;
     transform: rotateY(90deg) translateZ(225px);
     animation-name: mright;
@@ -183,7 +183,7 @@ body {
 
 .bottom-left {
     top: 300px;
-    background-image: url(surf.png);
+    background-image: url(leftbottom.png);
     z-index: 5;
     transform: rotateY(270deg) translateZ(225px);
     animation-name: tleft;
