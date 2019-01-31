@@ -1,20 +1,9 @@
-
-
-
-
-
-
-
-
-
-
-
 body {
     
 }
 
 .text > div {
-    font-size: 3rem;
+    font-size: 4rem;
     visibility: hidden;
     position: absolute;
     top: 60px;
@@ -72,6 +61,14 @@ body {
     transform-style: preserve-3d;
     transform: rotateY(10deg) rotateX(-5deg);
     perspective: 30000px;
+    animation-name: cube;
+    animation-delay: 10s;
+    animation-duration: 6s;
+}
+
+@keyframes cube {
+    33% {transform: rotateX(-95deg); top: 400px}
+    67% {transform: rotateX(85deg); top: 400px}
 }
 
 .side {
@@ -105,14 +102,14 @@ body {
 }
 
 .top-right {
-    background-image: url(baloons.png);
+    background-image: url(righttop.png);
     z-index: 10;
     transform: rotateY(90deg) translateZ(225px);
     animation-name: tright;
 }
 
 .top-back {
-    background-image: url(sand.png);
+    background-image: url(backtop.png);
     z-index: 0;
     transform: rotateY(180deg) translateZ(225px);
     animation-name: tback;
@@ -143,7 +140,7 @@ body {
 
 .middle-back {
     top: 150px;
-    background-image: url(sand.png);
+    background-image: url(backmiddle.png);
     z-index: 0;
     transform: rotateY(180deg) translateZ(225px);
     animation-name: mback;
@@ -151,7 +148,7 @@ body {
 
 .middle-left {
     top: 150px;
-    background-image: url(surf.png);
+    background-image: url(leftmiddle.png);
     z-index: 5;
     transform: rotateY(270deg) translateZ(225px);
     animation-name: mleft;
@@ -167,7 +164,7 @@ body {
 
 .bottom-right {
     top: 300px;
-    background-image: url(baloons.png);
+    background-image: url(rightbottom.png);
     z-index: 10;
     transform: rotateY(90deg) translateZ(225px);
     animation-name: tright;
@@ -175,7 +172,7 @@ body {
 
 .bottom-back {
     top: 300px;
-    background-image: url(sand.png);
+    background-image: url(backbottom.png);
     z-index: 5;
     transform: rotateY(180deg) translateZ(225px);
     animation-name: tback;
