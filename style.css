@@ -1,9 +1,10 @@
 :root {
                         /* The variables --sw, --ob, --sh and --tZ must maintain their ratio to one another */
-    --sw: 60vmin;       /* side of cube */
-    --ob: 40vmin;       /* offset from top to bottom layer */
-    --sh: 20vmin;       /* height of third of cube, offset from top to middle                        layer */
-    --tZ : 30vmin;      /* Z translation */
+    --sw: 60vw;       /* side of cube */
+    --ob: 40vw;       /* offset from top to bottom layer */
+    --sh: 20vw;       /* height of third of cube, offset from top to middle                        layer */
+    --tZ: 30vw;      /* Z translation */
+    --mrg: 20vw;
 }
 
 .text > div {
@@ -37,9 +38,9 @@
 
 .cube {
     position: absolute;
-    left: 50%;
-    margin-left: -225px;
-    top: 250px;
+/*    left: 50%;*/
+    margin-left: var(--mrg);
+    top: 150px;
     transform-style: preserve-3d;
     transform: rotateY(10deg) rotateX(-5deg);
     perspective: 40000px;
@@ -49,13 +50,15 @@
 }
 
 @keyframes cube {
-    33% {transform: rotateX(-95deg); top: 450px}
-    67% {transform: rotateX(85deg); top: 450px}
+    33% {transform: rotateX(-95deg); top: 70vmin}
+    67% {transform: rotateX(85deg); top: 70vmin}
 }
 
 .side {
     height: var(--sh);
+    max-height: 500px;
     width: var(--sw);
+    max-width: 500px;
     position: absolute;
     background-size: cover;
     animation-duration: 8s;
@@ -276,3 +279,23 @@ a {
     display: inline-block;
     padding: 10px 20px;
 }
+
+/*
+@media (max-width: 600px) {
+    :root {            
+        --sw: 90vmin;       
+        --ob: 60vmin;       
+        --sh: 30vmin;       
+        --tZ: 45vmin;
+        --mrg: 30vmin;
+    }
+}
+
+@media (min-width: 821px) {
+    :root {            
+        --mrg: 14vmax;
+    }
+    cube {
+        margin-left: var(14vmax);
+    }
+}*/
