@@ -279,23 +279,3 @@ a {
     display: inline-block;
     padding: 10px 20px;
 }
-
-/*
-@media (max-width: 600px) {
-    :root {            
-        --sw: 90vmin;       
-        --ob: 60vmin;       
-        --sh: 30vmin;       
-        --tZ: 45vmin;
-        --mrg: 30vmin;
-    }
-}
-
-@media (min-width: 821px) {
-    :root {            
-        --mrg: 14vmax;
-    }
-    cube {
-        margin-left: var(14vmax);
-    }
-}*/
