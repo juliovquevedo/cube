@@ -12,7 +12,7 @@
     visibility: hidden;
     position: absolute;
     left: 50%;
-    margin-left: -265px;
+    margin-left: -160px;
     top: 60px;
     text-align: center;
     animation-duration: 2s;
@@ -256,9 +256,9 @@
 .info {
     position: absolute;
     visibility: visible;
-    top: 900px;
+    top: 600px;
     left: 50%;
-    margin-left: -265px;
+    margin-left: -160px;
     font-size: 1.5rem;
     animation-name: info;
     animation-duration: 16s;
