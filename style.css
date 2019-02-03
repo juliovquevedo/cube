@@ -11,10 +11,6 @@
     font-size: 3rem;
     visibility: hidden;
     position: absolute;
-/*
-    left: 50%;
-    margin-left: -160px;
-*/
     top: 50px;
     display: inline-block;
     width: 95%;
@@ -42,7 +38,6 @@
 
 .cube {
     position: absolute;
-/*    left: 50%;*/
     margin-left: var(--mrg);
     top: 175px;
     transform-style: preserve-3d;
@@ -60,9 +55,7 @@
 
 .side {
     height: var(--sh);
-/*    max-height: 500px;*/
     width: var(--sw);
-/*    max-width: 500px;*/
     position: absolute;
     background-size: cover;
     animation-duration: 8s;
@@ -260,19 +253,9 @@
 .info {
     position: absolute;
     visibility: visible;
-<<<<<<< HEAD
-    top: 500px;
-=======
     top: 50px;
     width: 95%;
     text-align: center;
-    
-/*
-    top: 600px;
->>>>>>> resp2
-    left: 50%;
-    margin-left: -160px;
-*/
     font-size: 1.5rem;
     animation-name: info;
     animation-duration: 17s;
