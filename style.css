@@ -49,8 +49,8 @@
 }
 
 @keyframes cube {
-    33% {transform: rotateX(-95deg); top: 70vmin}
-    67% {transform: rotateX(85deg); top: 70vmin}
+    33% {transform: rotateX(-95deg); top: 425px;}
+    67% {transform: rotateX(85deg); top: 425px;}
 }
 
 .side {
