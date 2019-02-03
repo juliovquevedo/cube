@@ -8,12 +8,16 @@
 }
 
 .text > div {
-    font-size: 2rem;
+    font-size: 3rem;
     visibility: hidden;
     position: absolute;
+/*
     left: 50%;
     margin-left: -160px;
-    top: 60px;
+*/
+    top: 50px;
+    display: inline-block;
+    width: 95%;
     text-align: center;
     animation-duration: 2s;
 }
@@ -40,7 +44,7 @@
     position: absolute;
 /*    left: 50%;*/
     margin-left: var(--mrg);
-    top: 150px;
+    top: 175px;
     transform-style: preserve-3d;
     transform: rotateY(10deg) rotateX(-5deg);
     perspective: 40000px;
@@ -56,9 +60,9 @@
 
 .side {
     height: var(--sh);
-    max-height: 500px;
+/*    max-height: 500px;*/
     width: var(--sw);
-    max-width: 500px;
+/*    max-width: 500px;*/
     position: absolute;
     background-size: cover;
     animation-duration: 8s;
@@ -256,12 +260,22 @@
 .info {
     position: absolute;
     visibility: visible;
+<<<<<<< HEAD
     top: 500px;
+=======
+    top: 50px;
+    width: 95%;
+    text-align: center;
+    
+/*
+    top: 600px;
+>>>>>>> resp2
     left: 50%;
     margin-left: -160px;
+*/
     font-size: 1.5rem;
     animation-name: info;
-    animation-duration: 16s;
+    animation-duration: 17s;
 }
 
 @keyframes info {
@@ -278,4 +292,10 @@ a {
 .info a {
     display: inline-block;
     padding: 10px 20px;
+}
+
+@media (max-width: 600px){
+    .text > div {
+        font-size: 2rem;
+    }
 }
