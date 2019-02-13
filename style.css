@@ -5,6 +5,7 @@
     --sh: 20vw;       /* height of third of cube, offset from top to middle layer */
     --tZ: 30vw;      /* Z translation */
     --mrg: 20vw;
+    --tC: 50vh;
 }
 
 .text > div {
@@ -49,8 +50,8 @@
 }
 
 @keyframes cube {
-    33% {transform: rotateX(-95deg); top: 275px;}
-    67% {transform: rotateX(85deg); top: 275px;}
+    33% {transform: rotateX(-95deg); top: var(--tC);}
+    67% {transform: rotateX(85deg); top: var(--tC);}
 }
 
 .side {
