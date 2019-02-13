@@ -293,6 +293,6 @@ a {
         --tZ: 225px;
         --ob: 300px;
         --sh: 150px;
-        --mrg: calc(100vw + 450px / 2);
+        --mrg: calc(50vw - 225px);
     }
 }
