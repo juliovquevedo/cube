@@ -2,7 +2,7 @@
                         /* The variables --sw, --ob, --sh and --tZ must maintain their ratio to one another */
     --sw: 60vw;       /* side of cube */
     --ob: 40vw;       /* offset from top to bottom layer */
-    --sh: 20vw;       /* height of third of cube, offset from top to middle                        layer */
+    --sh: 20vw;       /* height of third of cube, offset from top to middle layer */
     --tZ: 30vw;      /* Z translation */
     --mrg: 20vw;
 }
@@ -55,7 +55,9 @@
 
 .side {
     height: var(--sh);
+    max-height: 150px;
     width: var(--sw);
+    max-width: 450px;
     position: absolute;
     background-size: cover;
     animation-duration: 8s;
@@ -64,6 +66,7 @@
 
 .top {
     height: var(--sw);
+    max-height: 450px;
     transform: rotateX(90deg) translateZ(var(--tZ));
     background-image: url(father.png);
     animation-name: toptop;
@@ -71,6 +74,7 @@
 
 .bottom {
     height: var(--sw);
+    max-height: 450px;
     transform: rotateX(-90deg) translateZ(var(--tZ));
     background-image: url(husband.png);
     animation-name: bottombottom;
@@ -280,5 +284,15 @@ a {
 @media (max-width: 600px){
     .text > div {
         font-size: 2rem;
+    }
+}
+
+
+@media (min-width: 750px){
+    :root {
+        --tZ: 225px;
+        --ob: 300px;
+        --sh: 150px;
+        --mrg: calc(100vw + 450px / 2);
     }
 }
